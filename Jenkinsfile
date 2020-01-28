@@ -1,19 +1,23 @@
 pipeline {
     agent any 
     stages {
-        stage('-----clean---') { 
+        stage('-----Var_declaration---') { 
             steps {
-                sh "mvn clean"
+                sh "var1=1"
+                sh "var2=2"
+                sh "var3=3"
             }
         }
-        stage('----test----') { 
+        stage('----printing----') { 
             steps {
-                sh "mvn test"
+                sh "echo 'this is master $var1"
+                sh "echo 'this is master $var2"
+                sh "echo 'this is master $var3"
             }
         }
-        stage('----package----') { 
+        stage('----end----') { 
             steps {
-                sh "mvn package"
+                sh "echo 'Finish'"
             }
         }
     }
