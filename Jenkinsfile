@@ -9,7 +9,7 @@ pipeline {
                 VAR2 = 'TWO'
             }
             steps {
-                sh 'printenv | grep -i VAR'
+                sh 'printenv VAR1'
             }
         }
     }
