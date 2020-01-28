@@ -6,14 +6,13 @@ pipeline {
                 sh "var1=one"
                 sh "var2=2"
                 sh "var3=3"
-                def var = "one"
             }
         }
         stage('----printing----') { 
             steps {
               // sh "echo printenv "
                 //sh "echo printenv "
-                sh echo "${var}"
+                echo "${var1}"
                 sh "echo ' printing......."
             }
         }
