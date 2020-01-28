@@ -9,7 +9,7 @@ pipeline {
                 VAR2 = 'TWO'
             }
             steps {
-                sh 'echo "This is master"| printenv VAR1'
+                sh 'echo "This is master VAR1"'
             }
         }
     }
