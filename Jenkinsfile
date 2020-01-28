@@ -18,7 +18,7 @@ pipeline {
           } 
         stage('Master3') {
             steps {
-              sh 'echo "This is master " | printenv VAR3'
+              sh 'echo "Database engine is ${VAR3}"| printenv VAR3'
             }
         }
     }
