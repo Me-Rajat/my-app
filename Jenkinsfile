@@ -13,7 +13,7 @@ pipeline {
             steps {
               // sh "echo printenv "
                 //sh "echo printenv "
-                echo "${var}"
+                sh echo "${var}"
                 sh "echo ' printing......."
             }
         }
