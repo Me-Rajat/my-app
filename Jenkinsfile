@@ -11,7 +11,7 @@ pipeline {
                // VAR2 = 'TWO'
             }
             steps {
-                sh 'echo "This is master VAR1" | printenv VAR1'
+                sh 'echo "This is master" | printenv VAR1'
             }
         }
          stage('Master2') {
@@ -19,7 +19,7 @@ pipeline {
                 //VAR2 = 'TWO'
             }
             steps {
-               sh 'echo "This is master VAR1" | printenv VAR2''
+               sh 'echo "This is master" | printenv VAR2'
             }
           } 
         stage('Master3') {
@@ -27,7 +27,7 @@ pipeline {
                // VAR2 = 'TWO'
             }
             steps {
-              sh 'echo "This is master VAR1" | printenv VAR1'
+              sh 'echo "This is master " | printenv VAR3'
             }
         }
     }
