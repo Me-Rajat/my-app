@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('-----Var_declaration---') { 
             steps {
-                sh "var1=1"
+                sh "var1=one"
                 sh "var2=2"
                 sh "var3=3"
             }
