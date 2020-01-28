@@ -10,9 +10,9 @@ pipeline {
         }
         stage('----printing----') { 
             steps {
-                sh "echo 'this is master 1'"
-                sh "echo 'this is master 2'"
-                sh "echo 'this is master 3'"
+                sh "echo 'this is master $var1'"
+                sh "echo 'this is master $var2'"
+                sh "echo 'this is master $var3'"
             }
         }
         stage('----end----') { 
