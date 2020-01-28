@@ -12,9 +12,8 @@ pipeline {
             steps {
               // sh "echo printenv "
                 //sh "echo printenv "
-                //sh "echo printenv "
-                sh "echo ' printing.......'"
-                sh "printenv | grep -i var"
+                sh "echo ${var1}"
+                sh "echo ' printing......."
             }
         }
         stage('----end----') { 
