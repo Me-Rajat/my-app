@@ -10,9 +10,10 @@ pipeline {
         }
         stage('----printing----') { 
             steps {
-                sh "echo $var1"
-                sh "echo $var2"
-                sh "echo $var3"
+                //sh "echo $var1"
+                //sh "echo $var2"
+                //sh "echo $var3"
+                sh "echo ' printing.......'"
             }
         }
         stage('----end----') { 
