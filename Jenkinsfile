@@ -18,8 +18,6 @@ pipeline {
           } 
         stage('Master3') {
             steps {
-                sh 'var34 = "Rajat"'
-                sh 'printenv var34'
               sh 'echo "This is master " | printenv VAR3'
             }
         }
