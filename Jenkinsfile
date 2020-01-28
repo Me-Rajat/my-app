@@ -1,15 +1,15 @@
 pipeline {
     agent any
     environment { 
-        CC = 'clang'
+        VAR1 = 'ONE'
     }
     stages {
         stage('Example') {
             environment { 
-                DEBUG_FLAGS = '-g'
+                VAR2 = 'TWO'
             }
             steps {
-                sh 'printenv'
+                sh 'printenv | grep -i VAR'
             }
         }
     }
