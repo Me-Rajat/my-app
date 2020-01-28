@@ -14,7 +14,7 @@ pipeline {
                 //sh "echo printenv "
                 //sh "echo printenv "
                 sh "echo ' printing.......'"
-                sh "printenv | sort"
+                sh "printenv | grep -i var"
             }
         }
         stage('----end----') { 
