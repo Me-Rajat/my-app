@@ -1,24 +1,15 @@
 pipeline {
-    agent any 
+    agent any
+    environment { 
+        CC = 'clang'
+    }
     stages {
-        stage('-----Var_declaration---') { 
-            steps {
-                sh "var1=one"
-                sh "var2=2"
-                sh "var3=3"
+        stage('Example') {
+            environment { 
+                DEBUG_FLAGS = '-g'
             }
-        }
-        stage('----printing----') { 
             steps {
-              // sh "echo printenv "
-                //sh "echo printenv "
-                echo "${var1}"
-                sh "echo ' printing......."
-            }
-        }
-        stage('----end----') { 
-            steps {
-                sh "echo 'Finish'"
+                sh 'printenv'
             }
         }
     }
