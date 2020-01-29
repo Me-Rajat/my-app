@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Master1') {
            when  {
-                 expression {choice == '1'}
+                 expression{choice == '1'}
             steps {
                 sh 'echo "This is master ${VAR1}"'
             }
@@ -17,7 +17,7 @@ pipeline {
          stage('Master2') {
              when 
              {
-                 expession {choice == '2'}
+                 expession{choice == '2'}
             {
             steps {
                sh 'echo "This is master ${VAR2}"'
@@ -26,7 +26,7 @@ pipeline {
           } 
         stage('Master3') {
              when  {
-                 expression {choice == '3'}
+                 expression{choice == '3'}
            
             steps {
               sh 'echo "This is master ${VAR3}"'
